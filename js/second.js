@@ -17,16 +17,10 @@ hogy a tömbben van-e number típusú elem vagy sem
 */
 
 function checker (array, value) {
-    const example = {};
-    //exists
-    array.some(sum => sum === value)
-    //index (findindex())
-
-    //allElementsAreNumbers
-
-    //someElementsAreNumbers
-    example.someElementsAreNumbers(example => {
-        return typeof value === "number";
-    })
-    //vagy? example.someElementsAreNumbers = array.some(item => return typeof value === "number")
+    const object = {
+        'exists': array.some(x => x === value),
+        'index': ,
+        'allElementsAreNumbers': ,
+        'someElementsAreNumbers':  
+    };
 }
