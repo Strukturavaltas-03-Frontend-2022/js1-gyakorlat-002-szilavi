@@ -21,14 +21,26 @@ const checker = (array, value) => {
         /*'exists': array.some(x => x === value),*/
         'exists': false,
         'index': -1,
-        'allElementsAreNumbers': false,
+        'allElementsAreNumbers': true,
         'someElementsAreNumbers': false  
     };
 
     for (let i = 0; i <array.length; i++) {
+        if (array[i] === value) {
+            object.exists = true
+            object.index = i
+        }
+
+        if (typeof array[i] !== 'number') {
+            onject.allElementsAreNumbers = false
+        }else {
+            object.someElementsAreNumbers = true
+        }
         
+        /*if (typeof array[i] === 'number') {
+            object.someElementsAreNumbers = true
+        }*/
     }
     
-    return object
-    
+    return object    
 }
