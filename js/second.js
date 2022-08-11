@@ -16,11 +16,19 @@ hogy a tömb minden eleme number típusú-e vagy sem
 hogy a tömbben van-e number típusú elem vagy sem
 */
 
-function checker (array, value) {
-    const object = {
-        'exists': array.some(x => x === value),
-        'index': ,
-        'allElementsAreNumbers': ,
-        'someElementsAreNumbers':  
+const checker = (array, value) => {
+    let object = {
+        /*'exists': array.some(x => x === value),*/
+        'exists': false,
+        'index': -1,
+        'allElementsAreNumbers': false,
+        'someElementsAreNumbers': false  
     };
+
+    for (let i = 0; i <array.length; i++) {
+        
+    }
+    
+    return object
+    
 }

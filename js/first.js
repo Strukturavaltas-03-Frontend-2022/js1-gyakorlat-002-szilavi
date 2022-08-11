@@ -6,14 +6,19 @@ __térjen vissza__ az elemek egész számra kerekített összegével!
 */
 
 
-const arrayTest = [1, 2]
+const arrayTest = [1, 2, 4, 8]
 
 const brutto = function (numberArray) {
+    let sum = 0;
 
-    const gross = numberArray.map(sum => sum * 1.27); //Math.round()
-
-    return gross
+    for (let i = 0; i < numberArray.length; i++) {
+        sum += numberArray[i]  * 1.27;
+        console.log(sum)
+    }
+    return Math.round(sum)
 }
+
+//const gross = Math.round(numberArray.map(sum => sum * 1.27)); 
 
 
 console.log(brutto(arrayTest))
